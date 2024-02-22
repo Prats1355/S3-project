@@ -3,10 +3,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "task" {
-  bucket = "prats-bucket"
+  bucket = "var.bucketname"
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
 }
